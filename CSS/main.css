@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+/*design header*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1.4rem 9%;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar .logo img {
+   width: 110px;
+   height: 60px;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+.nav-menu li {
+    margin-right: 8rem;
+}
+.nav-menu li a {
+    font-size: 1.5rem;
+    color: #2B2B2B;
+    font-weight: 500;
+}
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    color: #46D8D5;
+    transition: .5s;
+}
+#line  {
+position: relative;
+margin-bottom: 2px;
+}
+#line::before {
+    content: '';
+    position: absolute;
+    border-bottom: .2rem solid #46D8D5;
+    padding: 0 1.5rem;
+    top: 100%;
+    left: 16%;
+    margin-top: 3px;
+}
+
+.btn-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15%;
+}
+.btn-contact .contact {
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    color: #000000;
+    text-wrap: nowrap;
+    font-weight: 500;
+}
+.btn-contact .contact:hover {
+    color: #46D8D5;
+    transition: .5s;
+}
+.btn-contact .btn a {
+    padding: 1rem 3rem;
+    color: white;
+    background: #1A706F;
+    border-radius: .7rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn-contact .btn a:hover {
+    background: white;
+    color: black;
+    border: .1rem solid #1A706F;
+    transition: .5s;
+}
+.bx {
+    font-size: 25px;
+    font-weight: 500;
+}
+/*end of design header */
+
+/*desgin acceuil-1 */
+
+#acceuil {
+    min-height: 100vh;
+    padding: 10rem 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content {
+    margin-right: 25%;
+}
+.content h1 {
+    font-size: 3.4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+ 
+}
+.content h1 span {
+    color: #309E9B;
+    font-size: 3rem;
+}
+.content p {
+    font-size: 1.3rem;
+    color: #797878;
+    line-height: 2rem;
+}
+.phone {
+    position: relative;
+}
+.phone img {
+    width: 50rem;
+    height: 50rem;
+    
+}
+.phone::before{
+content: '';
+position: absolute;
+border: .2rem solid #1A706F ;
+background: linear-gradient(#46D8D5,#309E9B);
+border-radius: 50%;
+padding: 30%;
+width: 10rem;
+height: 10rem;
+z-index: -1;
+top: 6%;
+left: 7%;
+opacity: .7;
+box-shadow: 3rem 2rem #71EDEB75;
+}
+.demande {
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    color: #309E9B;
+    border: 1px solid #309E9B;
+    background: transparent;
+    border-radius: .5rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s ease;
+}
+.demande::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 0;
+  height: 100%;
+  background: #1A706F;
+  z-index: -1;
+  transition: .5s;
+}
+.demande:hover {
+    color: white;
+}
+
+.demande:hover::before {
+    width: 100%;
+}
+/* end of desgin acceuil-1 */
+
+/*desgin acceuil-2 */
+#acceuil-2 {
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: "Merriweather Sans", sans-serif;
+    position: relative;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    border: 1px solid #46D8D5 ;
+    background: #46D8D5;
+    padding: 1rem 3.7rem;
+    top: 1.5rem;
+    left: -1rem;
+    z-index: -1;
+}
+.content-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content-2 .paragraph {
+    max-width: 50rem;
+    margin-right: 5rem;
+    font-size: 1.2rem;
+}
+.paragraph .pa-1 {
+    margin-bottom: 1rem;
+    color: #424242;
+}
+.paragraph p {
+    font-family: "Merriweather Sans", sans-serif;
+}
+.btn-co {
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    color: #fff;
+    background: #46D8D5;
+    border: 1px solid #46D8D5;
+    border-radius: .5rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.btn-co::before {
+content: '';
+position: absolute;
+top: -0.2rem; 
+left: -0.2rem; 
+width: 0;
+height: 100%;
+padding-bottom: 1.5px;
+background: #309E9B;
+z-index: -1;
+transition: .5s;
+}
+.btn-co:hover::before {
+   width: calc(100% + 2px);
+}
+
+.group img {
+    border-radius: 50%;
+    margin-left: 4rem;
+    box-shadow: 4rem 3rem #71EDEB;
+    width: 35rem;
+    height: 35rem;
+}
+
+/* desgin acceuil-2 */
+
+/* design of fonctionalité*/
+
+#fonctionnalité {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Merriweather Sans", sans-serif;
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    
+}
+.card {
+    border: 0.2rem solid #46D8D554;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    padding: 7% 6%;
+    position: relative;
+    box-shadow: 0px 10px #46D8D554;
+    cursor: pointer;
+}
+.card img {
+    position: absolute;
+    width: 6.5rem;
+    height: 6.5rem;
+    left: 9rem;
+    top: 2rem;
+    box-shadow: -10px 3px #71EDEB2B;
+}
+
+.card .title-card {
+position: relative;
+}
+.title-card h5 {
+    position: absolute;
+    top: 2rem;
+    left: -2rem;
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+.title-card p {
+    position: relative;
+    top: 5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #797878;
+    font-weight: 600;
+}
+.card:hover {
+    transform: scale(1.1)
+}
+
+
+.choice {
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background: linear-gradient(#46D8D5, #309E9B);
+    width: 100%;
+    
+}
+.choice .dev-content {
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
+.choice .dev-content h4 {
+    font-size: 2.6rem;
+    text-wrap: nowrap;
+    color: #fff;
+    font-family: "Merriweather Sans", sans-serif;
+}
+.quality {
+    margin-top: 4rem;
+}
+.quality h6 {
+    font-size: 1.4rem;
+}
+.our-quality {
+    margin-top: 4rem;
+}
+.our-quality h6 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 4rem;
+    font-weight: 500;
+}
+.our-quality h6 span {
+    border: 0.2rem solid #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+.our-quality h6 ol {
+   margin-left: 9rem;
+   margin-top: 3rem;
+}
+.our-quality h6 ol li {
+    margin-top: 1rem;
+    list-style: disc;
+}
+
+.dev img {
+    border-radius: 50%;
+   position: relative;
+   top: 5rem;
+   left: -25rem;
+   box-shadow: 6rem -5rem #71EDEB;
+   width: 65rem;
+   height: 65rem;
+}
+
+
+
+
+
+.modele {
+    margin-top: 15rem;
+  
+  
+}
+.modele-content {
+    margin-top: 3rem;
+    margin-left: 7rem;
+    background: url(../img/Group\ 239264.png) no-repeat right;
+    padding: 17rem 0;
+} 
+.modele-content h2 {
+    margin-right: 100rem;
+    text-wrap: nowrap;
+}
+
+.modele-content p {
+    font-size: 1.2rem;
+}
+.modele-content .p-1 {
+    margin-bottom: 2.2rem;
+}
+
+    /*end design of fonctionalité */
+
+
+    /* design of inscription */
+    #inscription {
+        margin-top: 10rem;
+        margin-bottom: 10%;
+    }
+   .inscri {
+    background: #71EDEB2B;
+    width: 100%;
+    height: 90px;
+    position: relative;
+   }
+.compte {
+   position: absolute;
+   left: 21%;
+   top: 50%;
+   background: #309E9B;
+   width: 907px;
+   height: 311px;
+   border-radius: 7px;
+}
+.compte h2 {
+    color: #fff;
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 4rem;
+}
+.compte p {
+    text-align: center;
+    color: #fff;
+    margin-top: 1.2rem;
+    font-size: 1.3rem;
+}
+.compte .gratuit {
+    background: #fff;
+    padding: 1.2rem;
+    margin-left: 40%;
+    margin-top: 3rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.compte button:hover {
+    color: #1A706F;
+}
+.compte .gratuit::before {
+    content: '';
+position: absolute;
+top: 0; 
+left: 0; 
+width: 0;
+height: 100%;
+padding-bottom: 1.5px;
+background: #71EDEB;
+z-index: -1;
+transition: .5s;
+}
+.compte .gratuit:hover::before {
+    width: 100%;
+}
+.question {
+    margin-top: 25%;
+}
+.question h2 {
+    margin-left: 40%;
+}
+
+.all-question {
+    margin-top: 4rem;
+    margin-left: 20%;
+}
+.our-question {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    width: 75%;
+    border: 1px #46D8D540 solid;
+    padding: 1rem 0 ;
+    
+}
+.our-question p {
+    margin-left: 5rem;
+}
+.our-question p i {
+   margin-left: 60%;
+   font-size: 1.8rem;
+   color: #46D8D5;
+   cursor: pointer;
+}
+#down {
+    margin-left: 49%;
+    
+}
+    /*end of desigh inscription*/
+
+
+    /* desigh footer*/
+   .footer {
+      display: flex;
+      align-items: center;
+    padding: 3% 9%;
+    background: linear-gradient(#46D8D5, #309E9B);
+    position: relative;
+   }
+.infoLine p {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
+.product {
+    position: relative;
+    left: 25%;
+}
+.product h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.links a {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.social {
+    margin-left: 45%;
+}
+.social-media h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.social-media input {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.bx-send {
+    font-size: 2.4rem;
+    color: #46D8D5;
+    position: relative;
+    right: 3rem;
+    top: .5rem;
+    rotate: -45deg;
+}
+.icon {
+    margin-top: 1.7rem;
+    margin-left: -1rem;
+}
+.icon i {
+    margin-left: 1rem;
+    color: #46D8D5;
+    background: #fff;
+    padding: 3px;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+.commencer {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: #1A706F;
+    top: -8rem;
+    left: 25%;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.commencer h3 {
+    
+    font-size: 2rem;
+    color: #fff;
+}
+.commencer .btn-footer {
+    margin-left: 15%;
+}
+.commencer .btn-footer button {
+    padding: 1rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+.commencer .btn-footer button:nth-child(odd) {
+    background: #59F5F2;
+}
+.final {
+    position: absolute;
+    bottom: 4px;
+    margin-left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+    /*end of desigh footer*/
